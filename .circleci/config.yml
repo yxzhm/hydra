@@ -391,7 +391,9 @@ jobs:
           command: |
             echo 'export DOCKER_FULL_TAG=v1.7.1-rc.9' >> $BASH_ENV
             echo 'export DOCKER_SHORT_TAG=v1.7.1-rc.9' >> $BASH_ENV
-            ./.circleci/release_name.bash
+            echo 'export tag_name=v1.7.1-rc.9' >> $BASH_ENV
+            echo 'export tag=v1.7.1-rc.9' >> $BASH_ENV
+            echo 'export RELEASE_NAME=v1.7.1-rc.9' >> $BASH_ENV
             source $BASH_ENV
       - setup_remote_docker
       - run: docker login --username "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
