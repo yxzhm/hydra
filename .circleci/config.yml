@@ -389,20 +389,20 @@ jobs:
       - checkout
       - run:
           command: |
-            echo 'export DOCKER_FULL_TAG=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export DOCKER_SHORT_TAG=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export tag_name=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export tag=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export RELEASE_NAME=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export CIRCLE_TAG=v1.8.1-rc.9' >> $BASH_ENV
+            echo 'export DOCKER_FULL_TAG=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export DOCKER_SHORT_TAG=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export tag_name=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export tag=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export RELEASE_NAME=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export CIRCLE_TAG=v1.9.1-rc.9' >> $BASH_ENV
             source $BASH_ENV
       - run:
           command: |
-            echo 'export DOCKER_FULL_TAG=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export DOCKER_SHORT_TAG=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export tag_name=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export tag=v1.8.1-rc.9' >> $BASH_ENV
-            echo 'export RELEASE_NAME=v1.8.1-rc.9' >> $BASH_ENV
+            echo 'export DOCKER_FULL_TAG=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export DOCKER_SHORT_TAG=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export tag_name=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export tag=v1.9.1-rc.9' >> $BASH_ENV
+            echo 'export RELEASE_NAME=v1.9.1-rc.9' >> $BASH_ENV
             source $BASH_ENV
       - setup_remote_docker
       - run: docker login --username "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
