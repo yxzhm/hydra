@@ -52,31 +52,15 @@ snapshot:
   name_template: "{{ .Tag }}-next"
 changelog:
   sort: asc
-brew:
-  github:
-    owner: ory
-    name: homebrew-hydra
-  homepage:  https://www.ory.sh
-  commit_author:
-    name: ory
-    email: hi@ory.sh
 
-scoop:
-  bucket:
-    owner: ory
-    name: scoop-hydra
-  homepage:  https://www.ory.sh
-  commit_author:
-    name: ory
-    email: hi@ory.sh
 
 dockers:
   - image_templates:
-      - "oryd/hydra:v{{ .Major }}"
-      - "oryd/hydra:v{{ .Major }}.{{ .Minor }}"
-      - "oryd/hydra:v{{ .Major }}.{{ .Minor }}.{{ .Patch }}"
-      - "oryd/hydra:{{ .Env.DOCKER_SHORT_TAG }}"
-      - "oryd/hydra:latest"
+      - "yxzhm/hydra:v{{ .Major }}"
+      - "yxzhm/hydra:v{{ .Major }}.{{ .Minor }}"
+      - "yxzhm/hydra:v{{ .Major }}.{{ .Minor }}.{{ .Patch }}"
+      - "yxzhm/hydra:{{ .Env.DOCKER_SHORT_TAG }}"
+      - "yxzhm/hydra:latest"
     extra_files:
       - .releaser/LICENSE.txt
 
