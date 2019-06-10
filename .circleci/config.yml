@@ -389,8 +389,8 @@ jobs:
       - checkout
       - run:
           command: |
-            echo 'export DOCKER_FULL_TAG=v1.0.1-rc.9' >> $BASH_ENV
-            echo 'export DOCKER_SHORT_TAG=v1.0.1-rc.9' >> $BASH_ENV
+            echo 'export DOCKER_FULL_TAG=v1.0.2-rc.9' >> $BASH_ENV
+            echo 'export DOCKER_SHORT_TAG=v1.0.2-rc.9' >> $BASH_ENV
             ./.circleci/release_name.bash
             source $BASH_ENV
       - setup_remote_docker
