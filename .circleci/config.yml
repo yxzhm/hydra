@@ -397,6 +397,7 @@ jobs:
       - run: docker login --username "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
       - run: curl -sL https://git.io/goreleaser | bash
 
+
 workflows:
   version: 2
   "test, build, push, and deploy":
